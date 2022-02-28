@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #f1f2f6;
+}
+.mainContainer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.header {
+  padding-top: 2rem;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.binodChaudharyName {
+  font-size: 32px;
+  text-align: center;
+}
+.netValue {
+  width: 100%;
+  background-color: green;
+  text-align: center;
+  padding: 1rem 0rem;
+}
+.netValue h3 {
+  color: white;
+  font-size: 32px;
+  font-weight: 400;
+}
+.imageSection {
+  width: 10%;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+.App {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cards {
+  display: flex;
+  background-color: #f1f2f6;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 1rem;
+  /* padding: 4rem; */
+}
+.card {
+  width: 25%;
+  display: flex;
+  background-color: white;
+  /* background-color: ; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  gap: 1rem;
+}
+.card img {
+  width: 50%;
+}
+.card button {
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.3rem 1rem;
+  background-color: rgb(18, 216, 216);
+}
+.cart {
+  width: 50%;
+  background-color: white;
+  /* min-height: 20vh; */
+  text-align: center;
+  padding: 2rem 0rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* text-align: left; */
+  /* align-items: center; */
+  gap: 1rem;
+}
+.cartItems {
+  display: flex;
+  justify-content: left;
+  padding-left: 20px;
+  gap: 4rem;
+  align-items: left;
+}
+.itemBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.itemBtn button{
+    border: none;
+    cursor: pointer;
+    padding: 4px 1rem;
+    
+}
+.disable{
+pointer-events: none;
+background-color: rgb(60, 155, 155)!important;
+}
+.btnsPrice{
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width:800px) {
+  .cards {
+    display: flex;
+    background-color: #f1f2f6;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    gap: 1rem;
+    /* padding: 4rem; */
+  }
+  .card{
+    width: 100%;
+  }
+  .cart{
+    width: 100% !important;
+
+  }
+  .cartItems {
+    display: flex;
+    justify-content: left;
+    padding-left: 0px;
+    gap: 4rem;
+    align-items: left;
+  }
+  .binodChaudharyName {
+    font-size: 20px;
+    text-align: center;
+  }
+  .netValue {
+    width: 100%;
+    background-color: green;
+    text-align: center;
+    padding: 1rem 0rem;
+  }
+  .netValue h3 {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .imageSection{
+    width: 20%;
+  }
+  .cartItems{
+    gap: 2rem;
+    padding-left: 20px;
+  }
+}
+@media screen and (max-width:400px) {
+  .card{
+    width: 80%;
+  }
+}
